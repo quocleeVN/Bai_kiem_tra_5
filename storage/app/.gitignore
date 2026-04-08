@@ -1,0 +1,6 @@
+*
+!private/
+!public/
+!.gitignore
+public/images/web_kt/
+storage/framework/
