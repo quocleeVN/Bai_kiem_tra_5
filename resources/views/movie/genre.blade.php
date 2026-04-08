@@ -1,7 +1,5 @@
 <x-movie-layout>
-    <x-slot name="title">
-        Movie
-    </x-slot>
+    <x-slot name="title">Thể loại: {{$genre->genre_name_vn}}</x-slot>
     <div class="list-movie">
         @foreach($movies as $movie)
         <div class="movie">
