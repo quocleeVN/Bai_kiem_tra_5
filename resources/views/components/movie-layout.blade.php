@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>{{$title}}</title>
+    <title>{{ $title ?? 'Movie App' }}</title>
     <link rel="stylesheet" href="{{asset('library/bootstrap.min.css')}}">
 
     <script src="{{asset('library/jquery.slim.min.js')}}"></script>

@@ -31,4 +31,12 @@ class MovieController extends Controller
         $genre = DB::table('genre')->where('id', $id)->first();
         return view("movie.genre", compact('movies', 'genre'));
     }
+
+    public function danhsachphim()
+    {
+        $movies = DB::table('movie')
+            ->orderBy('release_date', 'desc')
+            ->get();
+        return view("movie.list", compact('movies'));
+    }
 }
