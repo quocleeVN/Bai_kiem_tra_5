@@ -9,3 +9,4 @@ Route::get('/theloai/{id}', [App\Http\Controllers\MovieController::class, 'showB
 Route::get('/openrouter', [OpenRouterController::class, 'chat']);
 
 Route::get('/detail/{id}', [App\Http\Controllers\MovieController_VA::class, 'detail']);
+Route::get('/danh-sach-phim', [App\Http\Controllers\MovieController::class, 'danhsachphim']);
